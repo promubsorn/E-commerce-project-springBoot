@@ -4,11 +4,8 @@ import com.jtspringproject.JtSpringProject.models.User;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 import com.jtspringproject.JtSpringProject.controller.UserController;
-import org.apache.jasper.tagplugins.jstl.core.When;
-import org.hibernate.exception.ConstraintViolationException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -17,7 +14,7 @@ import com.jtspringproject.JtSpringProject.services.userService;
 
 
 @SpringBootTest
-public class TestNewUserRegister {
+public class NewUserRegisterTests {
     @InjectMocks
     private UserController userController; // Assuming the controller's name is UserController
 
