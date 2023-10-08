@@ -1,8 +1,7 @@
 package com.jtspringproject.JtSpringProject;
 
-import org.hibernate.SessionFactory;
+
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import com.jtspringproject.JtSpringProject.models.Product;
 import com.jtspringproject.JtSpringProject.dao.productDao;
@@ -17,8 +16,6 @@ public class AddProductTests {
 
     @Autowired
     private productDao productService;
-    @Mock
-    private SessionFactory sessionFactory;
 
     @Test
     @Transactional
