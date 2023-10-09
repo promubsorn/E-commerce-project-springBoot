@@ -30,7 +30,6 @@ public class DeleteProductTests {
 
         boolean isDeleted = productService.deletProduct(productId);
         assertTrue(isDeleted);
-
         assertNull(productService.getProduct(productId));
 
     }
