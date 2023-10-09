@@ -25,7 +25,7 @@ public class GetCartTests {
 
     @Test
     public void testGetCarts() {
-        // Create test data
+        
         User user = new User();
         user.setUsername("TestUser");
         user.setAddress("TestAddress");
@@ -47,7 +47,6 @@ public class GetCartTests {
 
         when(cartDao.getCarts()).thenReturn(expectedCarts);
         List<Cart> actualCarts = cartDao.getCarts();
-
         assertNotNull(actualCarts);
         assertEquals(expectedCarts.size(), actualCarts.size());
     }
