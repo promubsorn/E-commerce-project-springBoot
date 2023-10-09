@@ -47,6 +47,7 @@ public class GetCartTests {
 
         when(cartDao.getCarts()).thenReturn(expectedCarts);
         List<Cart> actualCarts = cartDao.getCarts();
+
         assertNotNull(actualCarts);
         assertEquals(expectedCarts.size(), actualCarts.size());
     }
