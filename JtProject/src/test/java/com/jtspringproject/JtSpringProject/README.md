@@ -24,273 +24,113 @@ Conversion notes:
 
 
 
-<table>
-  <tr>
-   <td><strong>Test case ID</strong>
-   </td>
-   <td colspan="3" >TC0001
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Test case name</strong>
-   </td>
-   <td colspan="3" > A new product is successfully added to the database.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Purpose</strong>
-   </td>
-   <td colspan="3" >Verify that the `addProduct` method correctly adds a product to the database and returns the saved product. This test ensures the service layer functions correctly when adding a new product.
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Input characteristics</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<ol>
-
-<li><strong>Interface-based characteristics</strong>
-</li>
-</ol>
-   </td>
-   <td colspan="3" >C1: Whether the added Product is null 
-   </td>
-  </tr>
-  <tr>
-   <td>
-<ol>
-
-<li><strong>Functionality-based characteristics</strong>
-</li>
-</ol>
-   </td>
-   <td colspan="3" >C1: Availability of the product
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Testable functions</strong>
-   </td>
-   <td colspan="3" >testAddProduct()
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Parameters</strong>
-   </td>
-   <td colspan="3" >Product
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Return types</strong>
-   </td>
-   <td>Product
-   </td>
-   <td><strong>Return values</strong>
-   </td>
-   <td>Saved product
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Exceptional Behavior</strong>
-   </td>
-   <td colspan="3" >-
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Input domain</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>B1: Product is null
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>B2: Product is not null
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Test requirements (ACoC, ECC, PWC, BCC, MBCC)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>ACoC = 2 test cases
-   </td>
-   <td colspan="3" >{(Null product), (Not null Product)}
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Test value</strong>
-   </td>
-   <td>
-<ol>
-
-<li>Null product
-
-<li>Not null product
-</li>
-</ol>
-   </td>
-   <td><strong>Expected result</strong>
-   </td>
-   <td>
-<ol>
-
-<li>False
-
-<li>Product ID
-</li>
-</ol>
-   </td>
-  </tr>
-</table>
+Test case ID
+TC0001
+Test case name
+ A new product is successfully added to the database.
+Purpose
+Verify that the `addProduct` method correctly adds a product to the database and returns the saved product. This test ensures the service layer functions correctly when adding a new product.
+Input characteristics
+Interface-based characteristics
+C1: Whether the added Product is null 
+Functionality-based characteristics
+C1: Availability of the product
+Testable functions
+testAddProduct()
+Parameters
+Product
+Return types
+Product
+Return values
+Saved product
+Exceptional Behavior
+-
+Input domain
+B1: Product is null
 
 
 
-<table>
-  <tr>
-   <td><strong>Test case ID</strong>
-   </td>
-   <td colspan="3" >TC0002
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Test case name</strong>
-   </td>
-   <td colspan="3" >A product is retrieved correctly with a valid ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Purpose</strong>
-   </td>
-   <td colspan="3" >Verify that the getProduct(int ID) method correctly retrieves a product from the database when provided with a valid product ID. This test ensures that the method can successfully fetch an existing product by its ID.
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Input characteristics</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<ol>
 
-<li><strong>Interface-based characteristics</strong>
-</li>
-</ol>
-   </td>
-   <td colspan="3" >C1: Relation of ID to 0
-   </td>
-  </tr>
-  <tr>
-   <td>
-<ol>
 
-<li><strong>Functionality-based characteristics</strong>
-</li>
-</ol>
-   </td>
-   <td colspan="3" >C1: Whether the given ID has an actual product in the database
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Testable functions</strong>
-   </td>
-   <td colspan="3" >testGetProductByID()
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Parameters</strong>
-   </td>
-   <td colspan="3" >Product ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Return types</strong>
-   </td>
-   <td>Product
-   </td>
-   <td><strong>Return values</strong>
-   </td>
-   <td>Product of the given ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Exceptional Behavior</strong>
-   </td>
-   <td colspan="3" >-
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Input domain</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>B1: A valid ID
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>B2: An invalid ID
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" ><strong>Test requirements (ACoC, ECC, PWC, BCC, MBCC)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>ECC = 2 test cases
-   </td>
-   <td colspan="3" >{(valid ID), (invalid ID)}
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Test value (the real value will be added later na)</strong>
-   </td>
-   <td>
-<ol>
 
-<li>Valid ID
+B2: Product is not null
 
-<li>Invalid ID
-</li>
-</ol>
-   </td>
-   <td><strong>Expected result</strong>
-   </td>
-   <td>
-<ol>
 
-<li>Product
 
-<li>False
-</li>
-</ol>
-   </td>
-  </tr>
-</table>
+
+
+
+Test requirements (ACoC, ECC, PWC, BCC, MBCC)
+ACoC = 2 test cases
+{(Null), ( Product)}
+
+
+
+
+
+
+
+
+Test value
+Null
+New Product() 
+Expected result
+Throw error exception
+Product ID is exist
+
+
+
+
+
+
+
+Test case ID
+TC0002
+Test case name
+A product is retrieved correctly with a valid ID
+Purpose
+Verify that the getProduct(int ID) method correctly retrieves a product from the database when provided with a valid product ID. This test ensures that the method can successfully fetch an existing product by its ID.
+Input characteristics
+Interface-based characteristics
+C1: Relation of ID to 0
+Functionality-based characteristics
+C1: Whether the given ID has an actual product in the database
+Testable functions
+testGetProductByID()
+Parameters
+Product ID
+Return types
+Product
+Return values
+Product of the given ID
+Exceptional Behavior
+-
+Input domain
+B1: A valid ID
+
+
+
+
+
+
+B2: An invalid ID
+
+
+
+
+
+
+Test requirements (ACoC, ECC, PWC, BCC, MBCC)
+ECC = 2 test cases
+{(valid ID), (invalid ID)}
+Test value 
+1
+-1
+Expected result
+Return Product
+Return Null
+
+
 
 
 
