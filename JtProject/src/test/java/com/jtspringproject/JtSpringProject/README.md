@@ -336,7 +336,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C3: Add user to database
+   <td colspan="3" >C2: Add user to database
    </td>
   </tr>
   <tr>
