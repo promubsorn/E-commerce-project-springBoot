@@ -69,7 +69,7 @@ Conversion notes:
   <tr>
    <td><strong>Testable functions</strong>
    </td>
-   <td colspan="3" >testAddProduct()
+   <td colspan="3" > productService.addProduct(Product product)
    </td>
   </tr>
   <tr>
@@ -204,7 +204,7 @@ Conversion notes:
   <tr>
    <td><strong>Testable functions</strong>
    </td>
-   <td colspan="3" >testGetProductByID()
+   <td colspan="3" > productService.getProduct(int id)
    </td>
   </tr>
   <tr>
