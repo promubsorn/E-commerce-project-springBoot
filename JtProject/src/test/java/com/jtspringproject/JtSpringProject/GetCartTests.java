@@ -1,3 +1,7 @@
+/* Copyright (C) 2023 Nopparwut Sirisawat - All Rights Reserved
+ * You may use, distribute and modify this code under the terms of the MU license.
+ */
+
 package com.jtspringproject.JtSpringProject;
 
 import com.jtspringproject.JtSpringProject.dao.cartDao;
@@ -24,8 +28,18 @@ public class GetCartTests {
     private cartDao cartDao;
 
     @Test
-    public void testGetCarts() {
-        
+    public void testGetCartsWhenNoCartsExist() {
+
+        when(cartDao.getCarts()).thenReturn(new ArrayList<>());
+
+        List<Cart> actualCarts = cartDao.getCarts();
+
+        assertNotNull(actualCarts);
+        assertTrue(actualCarts.isEmpty());
+    }
+
+    @Test
+    public void testGetCartsWhenCartsExist() {
         User user = new User();
         user.setUsername("TestUser");
         user.setAddress("TestAddress");
@@ -45,10 +59,12 @@ public class GetCartTests {
         List<Cart> expectedCarts = new ArrayList<>();
         expectedCarts.add(cart);
 
+
         when(cartDao.getCarts()).thenReturn(expectedCarts);
+
         List<Cart> actualCarts = cartDao.getCarts();
+
         assertNotNull(actualCarts);
         assertEquals(expectedCarts.size(), actualCarts.size());
     }
 }
-

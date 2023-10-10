@@ -1,3 +1,6 @@
+/* Copyright (C) 2023 Kittipat Arpanon - All Rights Reserved
+ * You may use, distribute and modify this code under the terms of the MU license.
+ */
 package com.jtspringproject.JtSpringProject;
 
 import com.jtspringproject.JtSpringProject.models.User;

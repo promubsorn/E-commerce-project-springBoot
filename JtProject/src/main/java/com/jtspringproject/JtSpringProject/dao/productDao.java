@@ -44,15 +44,18 @@ public class productDao {
 	}
 	@Transactional
 	public Boolean deletProduct(int id) {
-
 		Session session = this.sessionFactory.getCurrentSession();
-		Object persistanceInstance = session.load(Product.class, id);
 
-		if (persistanceInstance != null) {
-			session.delete(persistanceInstance);
+		// Attempt to load the product by ID
+		Product product = session.get(Product.class, id);
+
+		if (product != null) {
+			session.delete(product);
 			return true;
 		}
-		return false;
+
+		return false; // Product with the given ID does not exist
 	}
+
 
 }

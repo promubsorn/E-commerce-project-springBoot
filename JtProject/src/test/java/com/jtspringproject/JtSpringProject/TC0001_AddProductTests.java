@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Profile("test")
-public class AddProductTests {
+public class TC0001_AddProductTests {
 
     @Autowired
     private productDao productService;
