@@ -1,3 +1,7 @@
+/* Copyright (C) 2023 Nopparwut Sirisawat - All Rights Reserved
+ * You may use, distribute and modify this code under the terms of the MU license.
+ */
+
 package com.jtspringproject.JtSpringProject;
 
 import org.junit.jupiter.api.Test;
@@ -18,8 +22,7 @@ public class DeleteProductTests {
 
     @Test
     @Transactional
-    public void testDeleteProduct() {
-
+    public void testProductAvailableAndHasProductId() {
         Product product = new Product();
         product.setName("ProductTest01");
         product.setPrice(99);
@@ -31,7 +34,30 @@ public class DeleteProductTests {
         boolean isDeleted = productService.deletProduct(productId);
         assertTrue(isDeleted);
         assertNull(productService.getProduct(productId));
-
     }
 
+    @Test
+    @Transactional
+    public void testProductNotAvailableAndHasProductId() {
+        int nonExistentProductId = 12345;
+        assertFalse(productService.deletProduct(nonExistentProductId));
+    }
+
+
+    @Test
+    @Transactional
+    public void testProductAvailableButDoesNotHaveProductId() {
+        Product product = new Product();
+        product.setName("ProductTest02");
+        product.setPrice(99);
+        productService.addProduct(product);
+
+        assertNotNull(product.getId());
+    }
+
+    @Test
+    @Transactional
+    public void testProductNotAvailableAndDoesNotHaveProductId() {
+        assertFalse(productService.deletProduct(0));
+    }
 }
