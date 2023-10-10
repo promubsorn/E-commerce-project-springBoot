@@ -134,9 +134,10 @@ Conversion notes:
    <td>
 <ol>
 
-<li>Null product
+<li>Null
 
-<li>Not null product
+
+<li>New Product()
 </li>
 </ol>
    </td>
@@ -145,9 +146,11 @@ Conversion notes:
    <td>
 <ol>
 
-<li>False
+<li>Throw error exception
 
-<li>Product ID
+
+<li>Product ID is exist
+
 </li>
 </ol>
    </td>
@@ -261,13 +264,13 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td><strong>Test value (the real value will be added later na)</strong>
+   <td><strong>Test value</strong>
    </td>
    <td>
 <ol>
 
-<li>Valid ID
-<li>Invalid ID
+<li>1
+<li>-1
 </li>
 </ol>
    </td>
@@ -276,9 +279,9 @@ Conversion notes:
    <td>
 <ol>
 
-<li>Product
+<li>Return Product
 
-<li>False
+<li>Return Null
 </li>
 </ol>
    </td>
