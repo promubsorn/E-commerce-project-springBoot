@@ -1,4 +1,4 @@
-/* Copyright (C) 1883 Kittipat Arpanon - All Rights Reserved
+/* Copyright (C) 2023 Kittipat Arpanon - All Rights Reserved
 * You may use, distribute and modify this code under the terms of the MU license.
 */
 package com.jtspringproject.JtSpringProject;
@@ -41,9 +41,10 @@ public class GetUserTests {
         when(session.createQuery(anyString())).thenReturn(query);
     }
     @Test
-    public void testGetUser() {
-
-        // Given Valid Credentials
+    public void testGetUser1() {
+        // (False, correct credential)
+        //'admin', '123'
+        //expected result ('1', '123, Albany Street', 'admin@nyan.cat', '123', 'ROLE_ADMIN', 'admin')
         String username = "admin";
         String password = "123";
         User MockUser1 = new User();
@@ -51,21 +52,37 @@ public class GetUserTests {
         MockUser1.setPassword(password);
         // When
         User result1 = userDao.getUser(username, password);
-        try {
-            assertEquals(MockUser1.getUsername(),result1.getUsername());
-        }catch (Exception e){
-            System.out.println(e);
-        }
-        // Given invalid Credentials
-        username = "admin";
-        password = "invalidpassword";
+        assertEquals(MockUser1.getUsername(), result1.getUsername());
+    }
+    @Test
+    public void testGetUser2() {
+        // (False,Incorrect credential)
+        //‘admin’,’invalidpassword’
+        //expected result (null)
+        String username = "admin";
+        String password = "invalidpassword";
         // When
         User result2 = userDao.getUser(username, password);
         assertNull(result2);
-        //Given non existence credentials
-        username = "non existence username";
-        password = "non existence password";
+    }
+    @Test
+    public void testGetUser3() {
+        // (True, correct credential)
+        //‘admin’,null
+        //expected result (null)
+        String username = "admin";
+        String password = null;
         User result3 = userDao.getUser(username, password);
         assertNull(result3);
+    }
+    @Test
+    public void testGetUser4(){
+        // (True, incorrect credential)
+        //‘invalidusername’,null
+        //expected result (null)
+        String username = "invalidusername";
+        String password = null;
+        User result4 = userDao.getUser(username, password);
+        assertNull(result4);
     }
 }
