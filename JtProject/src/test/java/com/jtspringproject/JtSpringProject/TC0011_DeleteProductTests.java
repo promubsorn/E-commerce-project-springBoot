@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Profile("test")
-public class DeleteProductTests {
+public class TC0011_DeleteProductTests {
 
     @Autowired
     private productDao productService;

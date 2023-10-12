@@ -15,7 +15,7 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class AddCategoryTests {
+public class TC0009_AddCategoryTests {
 
     @InjectMocks
     private categoryDao daoUnderTest;

@@ -20,7 +20,7 @@ import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class UserLoginTest {
+public class TC0007_UserLoginTest {
 
     @InjectMocks
     UserController userController;

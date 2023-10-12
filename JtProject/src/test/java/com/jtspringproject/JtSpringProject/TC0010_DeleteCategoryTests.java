@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.*;
 
-public class DeleteCategoryTests {
+public class TC0010_DeleteCategoryTests {
 
     @InjectMocks
     categoryDao daoUnderTest;

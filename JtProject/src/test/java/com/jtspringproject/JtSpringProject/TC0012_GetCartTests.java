@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Profile;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ import static org.mockito.Mockito.when;
 
 @SpringBootTest
 @Profile("test")
-public class GetCartTests {
+public class TC0012_GetCartTests {
 
     @MockBean
     private cartDao cartDao;
