@@ -4,7 +4,7 @@
 
 Yay, no errors, warnings, or alerts!
 
-Conversion time: 3.543 seconds.
+Conversion time: 3.369 seconds.
 
 
 Using this Markdown file:
@@ -17,10 +17,25 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β34
-* Mon Oct 09 2023 23:16:45 GMT-0700 (PDT)
+* Wed Oct 11 2023 23:12:35 GMT-0700 (PDT)
 * Source doc: Project 1 Unit Test
 * Tables are currently converted to HTML tables.
 ----->
+
+
+**Member** \
+6388007 Promubsorn Boonrod
+
+6388031 Nutawat Boonkhong
+
+6388066 Chanyanud Suwannimit
+
+6388056 Nopparwut Sirisawat
+
+6388119 Kittipat Arpanon
+
+6388142 Tawan-ok Ruekveerawattana
+
 
 <table>
   <tr>
@@ -48,6 +63,7 @@ Conversion notes:
   <tr>
    <td>
 <ol>
+
 <li><strong>Interface-based characteristics</strong>
 </li>
 </ol>
@@ -69,7 +85,7 @@ Conversion notes:
   <tr>
    <td><strong>Testable functions</strong>
    </td>
-   <td colspan="3" > productService.addProduct(Product product)
+   <td colspan="3" >testAddProduct()
    </td>
   </tr>
   <tr>
@@ -125,7 +141,19 @@ Conversion notes:
   <tr>
    <td>ACoC = 2 test cases
    </td>
-   <td colspan="3" >{(Null product), (Not null Product)}
+   <td colspan="3" >{(Null), ( Product)}
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td colspan="3" >
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td colspan="3" >
    </td>
   </tr>
   <tr>
@@ -136,8 +164,7 @@ Conversion notes:
 
 <li>Null
 
-
-<li>New Product()
+<li>New Product() 
 </li>
 </ol>
    </td>
@@ -148,14 +175,15 @@ Conversion notes:
 
 <li>Throw error exception
 
-
 <li>Product ID is exist
-
 </li>
 </ol>
    </td>
   </tr>
 </table>
+
+
+
 <table>
   <tr>
    <td><strong>Test case ID</strong>
@@ -204,7 +232,7 @@ Conversion notes:
   <tr>
    <td><strong>Testable functions</strong>
    </td>
-   <td colspan="3" > productService.getProduct(int id)
+   <td colspan="3" >testGetProductByID()
    </td>
   </tr>
   <tr>
@@ -264,12 +292,13 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td><strong>Test value</strong>
+   <td><strong>Test value </strong>
    </td>
    <td>
 <ol>
 
 <li>1
+
 <li>-1
 </li>
 </ol>
@@ -287,8 +316,6 @@ Conversion notes:
    </td>
   </tr>
 </table>
-
-
 
 
 
@@ -767,7 +794,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1: Must be able to add new Cart
+   <td colspan="3" >C1: Must be able to add new Cart to database
    </td>
   </tr>
   <tr>
@@ -839,9 +866,9 @@ Conversion notes:
   <tr>
    <td>C1: cart user is not null
    </td>
-   <td>‘User’,’product’
+   <td>‘User’,’product’ True
    </td>
-   <td>‘Null’, ‘Product’
+   <td>‘Null’, ‘Product’ False
    </td>
    <td>
    </td>
@@ -849,9 +876,9 @@ Conversion notes:
   <tr>
    <td>C2: Must be able to add new Cart
    </td>
-   <td>‘User’,’product’
+   <td>‘User’,’product’ True
    </td>
-   <td>‘Null’, ‘Product’
+   <td>‘Null’, ‘Product’ False
    </td>
    <td>
    </td>
@@ -863,17 +890,17 @@ Conversion notes:
 <ol>
 
 <li>(‘TestUser’, ‘TestAddress’, ‘<a href="mailto:lisa@gmail.com">lisa@gmail.com</a>’, ‘password123’),(‘Mock Product’, ‘100’)  
+
+<li>(‘null’),(‘Mock Product’, ‘100’)  
 </li>
 </ol>
    </td>
    <td><strong>Expected result</strong>
    </td>
-   <td>Cart ID
+   <td>Cart successfully added.
    </td>
   </tr>
 </table>
-
-
 
 
 
@@ -908,7 +935,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1: Number of cart
+   <td colspan="3" >C1: Number of cart is not null
    </td>
   </tr>
   <tr>
@@ -919,7 +946,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1: Must be able to delete cart
+   <td colspan="3" >C1: Must be able to delete cart from database
    </td>
   </tr>
   <tr>
@@ -989,9 +1016,9 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>C1: cart user is not null
+   <td>C1: cart is not null
    </td>
-   <td>‘cart’
+   <td>‘Cart’ 
    </td>
    <td>‘Invalid’
    </td>
@@ -1001,7 +1028,7 @@ Conversion notes:
   <tr>
    <td>C2: Must be able to delete new Cart
    </td>
-   <td>‘cart’
+   <td>‘Cart’
    </td>
    <td>‘Invalid’
    </td>
@@ -1012,7 +1039,7 @@ Conversion notes:
    <td><strong>Test value</strong>
    </td>
    <td>
-    cart.size
+    cart.size()
    </td>
    <td><strong>Expected result</strong>
    </td>
@@ -1145,11 +1172,11 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>ACoC
-   </td>
    <td>
    </td>
-   <td>
+   <td>B1: Valid user credentials
+   </td>
+   <td>B2: Invalid user credentials
    </td>
    <td>
    </td>
@@ -1175,9 +1202,23 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>
+   <td>MBCC(8)
    </td>
-   <td>
+   <td>1.)Valid,Valid, ("johnDoe", "password123")
+<p>
+2.)Valid,Invalid
+<p>
+3.)Invalid,Valid
+<p>
+4.)Invalid,Invalid
+<p>
+5.)Valid,Valid
+<p>
+6.)Valid,Invalid
+<p>
+7.)Invalid,Valid
+<p>
+8.)Invalid,Invalid
    </td>
    <td>
    </td>
@@ -1212,13 +1253,13 @@ Conversion notes:
   <tr>
    <td><strong>Test case name</strong>
    </td>
-   <td colspan="3" >TestAdminLogin
+   <td colspan="3" >UpdateCategoryTests
    </td>
   </tr>
   <tr>
    <td><strong>Purpose</strong>
    </td>
-   <td colspan="3" >To validate the admin login functionality ensuring correct view redirection and handling of user roles.
+   <td colspan="3" >To verify that the updateCategory method in categoryDao updates the category name correctly in the database when provided with a valid category ID.
    </td>
   </tr>
   <tr>
@@ -1233,7 +1274,9 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1: Provided username and password
+   <td colspan="3" >C1: A valid category ID is provided.
+<p>
+C2: A new name for the category is provided.
    </td>
   </tr>
   <tr>
@@ -1244,35 +1287,37 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C2: Verification of user credentials and role against the database.
+   <td colspan="3" >C3: The method fetches the category from the database based on the provided ID.
+<p>
+C4: The method updates the category name in the database.
    </td>
   </tr>
   <tr>
    <td><strong>Testable functions</strong>
    </td>
-   <td colspan="3" >adminController.adminlogin()
+   <td colspan="3" >categoryDao.updateCategory(int id, String name)
    </td>
   </tr>
   <tr>
    <td><strong>Parameters</strong>
    </td>
-   <td colspan="3" >Username, Password
+   <td colspan="3" >Category ID, New Category Name
    </td>
   </tr>
   <tr>
    <td><strong>Return types</strong>
    </td>
-   <td>ModelAndView
+   <td>Category
    </td>
    <td><strong>Return values</strong>
    </td>
-   <td>View name for redirection and any applicable model attributes.
+   <td>Updated Category Object
    </td>
   </tr>
   <tr>
    <td><strong>Exceptional Behavior</strong>
    </td>
-   <td colspan="3" >If a non-admin user tries to log in, the system should redirect to the "adminlogin" view with an appropriate error message.
+   <td colspan="3" >The method might throw exceptions if there's a database connection issue, a problem with the Hibernate session, or if the provided category ID is not present in the database.
    </td>
   </tr>
   <tr>
@@ -1280,7 +1325,7 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>B1: Valid admin credentials
+   <td>B1: A valid category ID that exists in the database.
    </td>
    <td>
    </td>
@@ -1290,7 +1335,7 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>B2: Invalid admin credentials or non-admin user credentials
+   <td>B2: A new valid name for the category.
    </td>
    <td>
    </td>
@@ -1326,15 +1371,25 @@ Conversion notes:
   <tr>
    <td>ACoC
    </td>
-   <td>
+   <td>B1: A valid category ID that 
    </td>
-   <td>
+   <td>B2: A new valid name for the category.
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>C1: Correct username and password provided
+   <td>C1: A valid category ID is provided.
+   </td>
+   <td>Invalid
+   </td>
+   <td>Valid
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>C2: A new name for the category is provided.
    </td>
    <td>Valid
    </td>
@@ -1344,21 +1399,21 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>C2: Verification of user role against the database
+   <td>C3: The method fetches the category from the database based on the provided ID
    </td>
    <td>Valid
    </td>
-   <td>Invalid
+   <td>Valid
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>
+   <td>C4: The method updates the category name in the database.
    </td>
-   <td>
+   <td>Valid
    </td>
-   <td>
+   <td>Valid
    </td>
    <td>
    </td>
@@ -1366,15 +1421,11 @@ Conversion notes:
   <tr>
    <td><strong>Test value</strong>
    </td>
-   <td>1. "admin", "admin123"
-<p>
-2. "user", "user123"
+   <td>1.) Category ID: 1, New Category Name: "UpdatedCategory"
    </td>
    <td><strong>Expected result</strong>
    </td>
-   <td>1. Redirection to "adminHome"
-<p>
-2. Redirection to "adminlogin" with error message "Please enter correct username and password"
+   <td>1.) The returned Category object should have its name updated to "UpdatedCategory".
    </td>
   </tr>
 </table>
@@ -1505,9 +1556,9 @@ Conversion notes:
   <tr>
    <td>ACoC:
    </td>
-   <td>
+   <td>B1: A valid category name
    </td>
-   <td>
+   <td>B2: An invalid category name
    </td>
    <td>
    </td>
@@ -1550,6 +1601,8 @@ Conversion notes:
 2."" (empty string)
 <p>
 3.null
+<p>
+4."Electronics"
    </td>
    <td><strong>Expected result</strong>
    </td>
@@ -1558,6 +1611,8 @@ Conversion notes:
 2.Error due to invalid name
 <p>
 3.Error due to invalid name
+<p>
+4.Error due to database failure
    </td>
   </tr>
 </table>
@@ -1595,7 +1650,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1: Category ID exists in the database.
+   <td colspan="3" >C1: The category ID is a valid input that corresponds to an existing category in the database.
    </td>
   </tr>
   <tr>
@@ -1686,11 +1741,11 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>ACoC
-   </td>
    <td>
    </td>
-   <td>
+   <td>B1: A valid category ID that exists in the database.
+   </td>
+   <td>B2: An invalid category ID that doesn't exist in the database.
    </td>
    <td>
    </td>
@@ -1698,9 +1753,9 @@ Conversion notes:
   <tr>
    <td>C1: Category ID provided to the method.
    </td>
-   <td>
+   <td>Valid
    </td>
-   <td>
+   <td>Invalid
    </td>
    <td>
    </td>
@@ -1708,17 +1763,21 @@ Conversion notes:
   <tr>
    <td>C2: The method's capability to delete a category from the database.
    </td>
-   <td>
+   <td>True
    </td>
-   <td>
+   <td>False
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>
+   <td>BCC( case)
    </td>
-   <td>
+   <td>1).(Valid,True)
+<p>
+2).(Invalid,True)
+<p>
+3).(Valid,False)                                                                                             
    </td>
    <td>
    </td>
@@ -1728,15 +1787,19 @@ Conversion notes:
   <tr>
    <td><strong>Test value</strong>
    </td>
-   <td>1.)1
+   <td>1.)1(assuming this is a valid ID)
 <p>
-2.)2
+2.)2(assuming this is an invalid ID)
+<p>
+3.3 (assuming this is another invalid ID, different from the second test case)
    </td>
    <td><strong>Expected result</strong>
    </td>
    <td>1.True
 <p>
 2.False
+<p>
+3.False (because it's an invalid ID and the system should not delete anything, thus returning False)
    </td>
   </tr>
 </table>
@@ -1774,7 +1837,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C1:  The product id is not null
+   <td colspan="3" >C1:  Relation of ID to 0
    </td>
   </tr>
   <tr>
@@ -1785,7 +1848,7 @@ Conversion notes:
 </li>
 </ol>
    </td>
-   <td colspan="3" >C2: Availability of the product
+   <td colspan="3" >C2: Whether the given ID has an actual product in the database
    </td>
   </tr>
   <tr>
@@ -1821,7 +1884,7 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>B1: The product is available (exists in the database).
+   <td>B1: A valid ID
    </td>
    <td>
    </td>
@@ -1831,7 +1894,7 @@ Conversion notes:
    </td>
   </tr>
   <tr>
-   <td>B2: The product isn't available (the product doesn't exist in the database).
+   <td>B2: An invalid ID
    </td>
    <td>
    </td>
@@ -1847,7 +1910,31 @@ Conversion notes:
   <tr>
    <td>ACoC = 2 test cases
    </td>
-   <td colspan="3" >{(Product available), (Product not available)}
+   <td>B1: Product available 
+   </td>
+   <td>B2: Product not available
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>C1: product id is not null
+   </td>
+   <td> 1, ‘True’
+   </td>
+   <td>  1, ‘False’
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>C2: product id is invalid
+   </td>
+   <td> { }, ’True ’
+   </td>
+   <td>{ },  ‘False’
+   </td>
+   <td>
    </td>
   </tr>
   <tr>
@@ -1856,15 +1943,30 @@ Conversion notes:
    <td>
 <ol>
 
-<li>Product available
+<li>Product available and have product id
 
-<li>Product not available
+<li>Product not  available and  have product id 
+
+<li>Product  available and don’t have product id
+
+<li>Product not  available and don’t have product id 
 </li>
 </ol>
    </td>
    <td><strong>Expected result</strong>
    </td>
-   <td>True , False 
+   <td>
+<ol>
+
+<li>True 
+
+<li>False
+
+<li>False
+
+<li>False 
+</li>
+</ol>
    </td>
   </tr>
 </table>
