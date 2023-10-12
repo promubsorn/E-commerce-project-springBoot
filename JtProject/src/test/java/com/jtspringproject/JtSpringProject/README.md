@@ -891,7 +891,7 @@ Conversion notes:
 
 <li>(‘TestUser’, ‘TestAddress’, ‘<a href="mailto:lisa@gmail.com">lisa@gmail.com</a>’, ‘password123’),(‘Mock Product’, ‘100’)  
 
-<li>(‘null’),(‘Mock Product’, ‘100’)  
+ 
 </li>
 </ol>
    </td>
