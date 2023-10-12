@@ -19,7 +19,7 @@ import org.hibernate.query.Query;
 import com.jtspringproject.JtSpringProject.dao.userDao;
 
 @SpringBootTest
-public class GetUserTests {
+public class TC0004_GetUserTests {
 
     @Mock
     private SessionFactory sessionFactory;

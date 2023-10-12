@@ -18,7 +18,7 @@ import com.jtspringproject.JtSpringProject.services.userService;
 
 
 @SpringBootTest
-public class NewUserRegisterTests {
+public class TC0003_NewUserRegisterTests {
     @InjectMocks
     private UserController userController; // Assuming the controller's name is UserController
 
